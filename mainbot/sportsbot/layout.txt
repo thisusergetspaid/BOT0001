@@ -1,0 +1,42 @@
+sports_ai/
+
+├── main.py
+├── config.py
+├── requirements.txt
+
+├── database/
+│   ├── db.py
+│   ├── models.py
+│   └── memory.py
+
+├── agents/
+│   ├── news_agent.py
+│   ├── odds_agent.py
+│   ├── injury_agent.py
+│   ├── social_agent.py
+│   └── simulation_agent.py
+
+├── data/
+│   ├── sports_api.py
+│   ├── odds_api.py
+│   ├── news_api.py
+│   └── weather_api.py
+
+├── ai/
+│   ├── predictor.py
+│   ├── evaluator.py
+│   ├── bankroll.py
+│   └── models/
+
+├── backtesting/
+│   ├── backtester.py
+│   └── evaluator.py
+
+├── vision/
+│   ├── video_processor.py
+│   └── player_tracking.py
+
+└── storage/
+    ├── historical_games.db
+    ├── odds.db
+    └── injuries.db

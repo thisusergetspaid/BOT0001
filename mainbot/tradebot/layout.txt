@@ -1,0 +1,22 @@
+trading_bot/
+├── main.py                    # Entry point
+├── config.py                  # All settings + API keys
+├── requirements.txt
+├── .env.example
+├── data/
+│   └── ingestion.py           # Market, insider, news, etc.
+├── analysis/
+│   ├── orchestrator.py        # Multi-agent coordinator
+│   ├── technical.py
+│   ├── fundamental.py
+│   └── sentiment.py
+├── backtesting/
+│   └── engine.py
+├── risk/
+│   └── manager.py
+├── execution/
+│   └── broker.py
+├── monitoring/
+│   └── dashboard.py
+└── utils/
+    └── helpers.py
