@@ -22,7 +22,9 @@ def main():
         102
     )
 
-    print(result)
+    print("News:", latest_news)
+    print("Odds:", sportsbook_odds)
+    print("Simulation:", result)
 
 if __name__ == "__main__":
     main()

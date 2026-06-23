@@ -1,28 +1,11 @@
-from models import *
-from database import *
+from coach import calculate_macros
 
-Base.metadata.create_all(bind=engine)
 
-db = SessionLocal()
+def main() -> None:
+    macros = calculate_macros(weight_lbs=205, goal="bulk")
+    print("Fitness capability demo")
+    print(macros)
 
-new_user = User(
-    name="Valentino",
-    age=30,
-    height_cm=183,
-    goal="bulk"
-)
 
-db.add(new_user)
-db.commit()
-
-user_id = new_user.id
-
-weight = WeightLog(
-    user_id=user_id,
-    weight=205
-)
-
-db.add(weight)
-db.commit()
-
-print("User created")
+if __name__ == "__main__":
+    main()
